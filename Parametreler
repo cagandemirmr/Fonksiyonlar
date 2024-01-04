@@ -44,3 +44,11 @@ print(bolme())
 print(a)
 print(b)
 #Bir programın ana hatlarını belirtirken bazı fonksiyonlar kısa süreliğine boş kalabilir onları kısa bir süreliğine boş bırakmak için ya pass ya da return komutu bırakılır.
+'''def dolar(TL):
+    return (TL/30)
+#fonksiyonlarda çikti alacaksak return ü unutmamaliyiz.
+print(dolar(1000)) '''
+
+dolar=lambda TL: TL/30
+print(dolar(1000))
+#Eğer bir fonksiyonu kısaltmamız gerekirse bizde o zaman lambdakomutunu kullanırız.
