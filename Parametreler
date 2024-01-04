@@ -23,3 +23,24 @@ print(topla())
 print(a)
 print(b)
 #Eğer fonksiyonun içindeki bir parametreyi sonradan kullanamak istersek o zaman global fonksiyonunu fonksiyonun içerisinde belirtmemiz gereklidir.
+
+def topla():
+    global a
+    global b
+    a=5
+    b=6
+    return(a+b)
+
+def cikarma():
+    return
+def carpma():
+    pass
+def bolme():
+   pass  
+print(topla())
+print(cikarma())
+print(carpma())
+print(bolme())
+print(a)
+print(b)
+#Bir programın ana hatlarını belirtirken bazı fonksiyonlar kısa süreliğine boş kalabilir onları kısa bir süreliğine boş bırakmak için ya pass ya da return komutu bırakılır.
