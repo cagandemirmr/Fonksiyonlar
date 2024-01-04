@@ -1,0 +1,17 @@
+'''def ussu(a,b):
+    if b==0:
+        return 1
+    else:
+        return a**b
+'''
+def ussu(a,b):
+    if b==0:
+        return 1
+    else:
+        return a*ussu(a,b-1)
+    #Bu fonksiyon öz yinelemeli bir fonksiyondur.
+
+a=int(input("asil sayi:"))   
+b=int(input("ussu'nu giriniz:"))
+print("istediğiniz sayinin ussu=",ussu(a,b))
+
