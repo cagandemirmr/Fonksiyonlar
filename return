@@ -1,0 +1,13 @@
+def alan(u,g):
+    A=u*g
+    return A
+
+def cevre(u,g):
+    C=2*(u+g)
+    return C
+
+u=int(input("Dikdörtgenin uzun kenari:"))
+g=int(input("Dikdörtgenin kisa genişliği:"))
+
+print("Dikdörtgenin alani:",alan(u,g))
+print("Dikdörtgenin cevresi:",cevre(u,g))
