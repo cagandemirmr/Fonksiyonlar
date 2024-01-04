@@ -11,3 +11,15 @@ ad=input("İsminizi lütfediniz:")
 
 selam(ad)
 #Burada parametre tanımlanmıştır. Bu nedenle bu değişkeni istediğimiz gibi değiştirebiliriz.
+
+def topla():
+    global a
+    global b
+    a=5
+    b=6
+    return(a+b)
+
+print(topla())
+print(a)
+print(b)
+#Eğer fonksiyonun içindeki bir parametreyi sonradan kullanamak istersek o zaman global fonksiyonunu fonksiyonun içerisinde belirtmemiz gereklidir.
