@@ -1,0 +1,13 @@
+'''def selamlama():
+    isim=input( "isminizi bahşedin lütfen:")
+    print("Tanistiğima memnun oldum", isim )
+
+selamlama() '''
+
+def selam(isim):
+    print("Sayin", isim, "resturantimiza hoş gldiniz.")
+
+ad=input("İsminizi lütfediniz:")
+
+selam(ad)
+#Burada parametre tanımlanmıştır. Bu nedenle bu değişkeni istediğimiz gibi değiştirebiliriz.
