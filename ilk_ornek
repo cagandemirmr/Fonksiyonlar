@@ -1,0 +1,6 @@
+def toplama():
+    print("İki sayinin toplanmasi işlemidir.")
+    print("Örneğin",5,"+",7,"=",12)
+  
+toplama()
+
