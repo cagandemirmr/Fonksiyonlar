@@ -1,0 +1,4 @@
+def model(isim,renk,marka):
+    print("Arabanın ismi:",isim,"Arabanın rengi:",renk,"Arabanın markası:",marka)
+    
+print(model(isim="Lola",renk="Mavi",marka="Audi"))
