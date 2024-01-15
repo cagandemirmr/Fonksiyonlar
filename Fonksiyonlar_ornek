@@ -72,5 +72,34 @@ def introduction():
    print("I was born on",birthday,"in",place_of_birth,"now i live in",current_city)
 
 introduction()
+/////////////////////////////
+def city_name(city):
+    return city
+
+def introduction():
+    birthday = "4 September 1996"
+    place_of_birth = "London"
+    current_city = city_name("New York")  # city_name fonksiyonunu çağırırken bir argüman geçirin
+    print("I was born on", birthday, "in", place_of_birth, "now I live in", current_city)
+
+introduction()
 
 ---------------------
+Julia finally left the airport and noticed that the weather is not as she expected. It's always good to know the weather forecast in the new city. 
+
+You are provided with a 7 days' weather forecast. In the lesson, we discussed how you can construct a line plot using seaborn. Julia finds line plots confusing, try to create a bar plot for her to find out what the weather will be for the next 7 days. 
+
+📌 Use the *barplot* method from the *seaborn* library with the data below.
+
+import seaborn as sns
+import pandas as pd
+
+# Weather data
+day = [1, 2, 3, 4, 5, 6, 7]
+avg_temperature = [14, 9, 3, 11, 18, 27, 6]
+
+# Creating a DataFrame
+weather_data = pd.DataFrame({'Day': day, 'Average Temperature': avg_temperature})
+
+# Using seaborn to create a bar plot
+sns.barplot(x='Day', y='Average Temperature', data=weather_data)
