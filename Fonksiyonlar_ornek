@@ -1,0 +1,76 @@
+#Your first task will be to write a greetings function for Julia so she can say hello to her brother Sam.
+def greetings(name):
+  print("Hello",name)
+
+greetings("cagan")
+
+------------------
+Similar to the example we saw in the lesson earlier, let's have a function that takes 2 numbers as an input and returns their difference.
+
+number1=int(input("Birinci sayıyı giriniz:"))
+number2=int(input("İkinci sayıyı giriniz:"))
+def difference(number1, number2):
+  fark=number1-number2
+  return fark
+
+difference(number1,number2)
+//////////////////////////////Bir de bu yöntem var.
+def difference():
+    number1 = int(input("Birinci sayıyı giriniz:"))
+    number2 = int(input("İkinci sayıyı giriniz:"))
+    fark = number1 - number2
+    return fark
+
+result = difference()
+print("İki sayı arasındaki fark:", result)
+------------------
+Now, it's your turn to create a function print_introduction that takes these 3 arguments we defined above and print the following sentence:
+"I was born on birthday in place of birth and now I live in where she currently lives."
+
+birthday = "4 September 1996"
+place_of_birth = "London"
+current_city = "London"
+
+def introduction():
+   print("I was born on",birthday,"in",place_of_birth,"now i live in",current_city)
+
+introduction()
+///////////////////////////////Değerleri fonksionun içerisine de alabiliriz.
+def introduction():
+   birthday = "4 September 1996"
+   place_of_birth = "London"
+   current_city = "London"
+   print("I was born on",birthday,"in",place_of_birth,"now i live in",current_city)
+
+introduction()
+
+-----------------
+
+def city_name():
+  sehir="USA"
+  return sehir
+
+def introduction():
+   global current_city
+   birthday = "4 September 1996"
+   place_of_birth = "London"
+   current_city = city_name()
+   print("I was born on",birthday,"in",place_of_birth,"now i live in",current_city)
+
+introduction()
+//////////////////////////////Argüman içine almak için ise böyle bir çalışma yaparız.
+sehir="USA"
+def city_name(sehir):
+  city=sehir
+  return city
+
+def introduction():
+   global current_city
+   birthday = "4 September 1996"
+   place_of_birth = "London"
+   current_city = city_name(sehir)
+   print("I was born on",birthday,"in",place_of_birth,"now i live in",current_city)
+
+introduction()
+
+---------------------
