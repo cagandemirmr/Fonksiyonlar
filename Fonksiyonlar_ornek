@@ -103,3 +103,27 @@ weather_data = pd.DataFrame({'Day': day, 'Average Temperature': avg_temperature}
 
 # Using seaborn to create a bar plot
 sns.barplot(x='Day', y='Average Temperature', data=weather_data)
+----------------------
+Julia looked at the road sign and she sees that city center is 12 miles away from the airport. First, we will write a function for converting miles to kilometers. We know that 1 mile = 1.60934 kilometers. We will use this information to write the function.
+
+In this part, you will write 2 functions:
+
+mile2km: this function will take mile as an argument and return equivalent kilometers.
+km2mile: this function will take km as an argument and return equivalent miles.
+💣 Note: It is a naming convention to use '2' between the two quantities which indicates the conversion from the first quantity to the second quantity
+
+miles = int(input("Write the value:"))
+
+def mile2km(miles):
+    global kilometre
+    kilometre = miles * 1.60934
+    return kilometre
+
+km = mile2km(miles)
+
+def km2mile(km):
+    mil = km / 1.60934
+    return mil
+
+# Corrected the function name to km2mile
+print("Km:",mile2km(miles),"\nMil:",km2mile(km))
