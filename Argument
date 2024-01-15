@@ -1,0 +1,14 @@
+Fonksiyonların içine yazdığımız değerlere göre fonksiyonlar
+Sıralı argüman ve değişkenli argüman olarak ikiye ayrılırlar.
+Değiken argümanlar fonksiyondaki sıralamaya bakılmaksızın fonksiyonda ilgili oldukları değişkene atanabilirler.
+def sum(number1,number2):
+    sonuc=number1+number2
+    return sonuc
+    
+answer=sum(3,5)
+print(answer)
+---------------------
+def model(isim,renk,marka):
+    print("Arabanın ismi:",isim,"Arabanın rengi:",renk,"Arabanın markası:",marka)
+    
+print(model(isim="Lola",renk="Mavi",marka="Audi"))
