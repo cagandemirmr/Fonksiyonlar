@@ -1,0 +1,54 @@
+
+#Enumerate alıştırmaları
+
+'''Liste = ["elma", "armut", "çilek", "muz"]
+0: elma
+1: armut
+2: çilek
+3: muz
+for i, meyve in enumerate(Liste):
+    print(i,meyve)'''
+
+'''metin = "Python programlama dili çok güçlüdür"
+
+yeni_metin= metin.split(" ")
+
+for i,kelime in enumerate(yeni_metin):
+    print(i,kelime)'''
+
+#Zip alıştırmaları
+
+'''liste1 = ["elma", "armut", "çilek"]
+liste2 = ["kırmızı", "yeşil", "mavi"]
+
+print(dict(zip(liste1,liste2)))'''
+
+'''liste1 = ["a", "b", "c"]
+liste2 = [1, 2, 3]
+
+print(dict(zip(liste1,liste2)))
+'''
+
+'''#Orta: Bir metin içindeki her bir karakterin indeksini ve kendisini ekrana yazdıran bir program yazın.
+metin = "Python programlama dili çok güçlüdür"
+
+for i, karakter in enumerate(metin):
+    print(i,karakter)
+'''
+'''#Zor: Bir liste içindeki çift sayıları bulup, çift sayıların indeksini ve değerini ekrana yazdıran bir program yazın.
+liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for i, numara in enumerate(liste):
+    if numara % 2 ==0:
+        print(i,numara)
+'''
+
+'''#Çok Zor: Bir metin içindeki her bir kelimenin uzunluğunu ve kendisini ekrana yazdıran bir program yazın.
+metin = "Python programlama dili çok güçlüdür"
+
+metin_liste = metin.split()
+for i, kelime in enumerate(metin_liste):
+    print(kelime,len(kelime))
+'''
+
+
